@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E037982B25B19910008A4224 /* UIDevice+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E037982A25B19910008A4224 /* UIDevice+extension.swift */; };
 		E088F8FC2592DAFD008969DE /* Date+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E088F8FB2592DAFD008969DE /* Date+extension.swift */; };
 		E088F8FF2592DB9D008969DE /* Throttle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E088F8FE2592DB9D008969DE /* Throttle.swift */; };
 		E088F9022592DBDA008969DE /* Debounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = E088F9012592DBDA008969DE /* Debounce.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E037982A25B19910008A4224 /* UIDevice+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+extension.swift"; sourceTree = "<group>"; };
 		E088F8FB2592DAFD008969DE /* Date+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+extension.swift"; sourceTree = "<group>"; };
 		E088F8FE2592DB9D008969DE /* Throttle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Throttle.swift; sourceTree = "<group>"; };
 		E088F9012592DBDA008969DE /* Debounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debounce.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				E0D1ECFD2578DA6D00421131 /* String+extension.swift */,
 				E0D1ECFF2578E3FC00421131 /* Data+extension.swift */,
 				E088F8FB2592DAFD008969DE /* Date+extension.swift */,
+				E037982A25B19910008A4224 /* UIDevice+extension.swift */,
 				E088F8FE2592DB9D008969DE /* Throttle.swift */,
 				E088F9012592DBDA008969DE /* Debounce.swift */,
 				E0D1ECEF2578DA5300421131 /* Assets.xcassets */,
@@ -168,6 +171,7 @@
 				E0D1ECEA2578DA4F00421131 /* AppDelegate.swift in Sources */,
 				E0D1ECEC2578DA4F00421131 /* SceneDelegate.swift in Sources */,
 				E088F9022592DBDA008969DE /* Debounce.swift in Sources */,
+				E037982B25B19910008A4224 /* UIDevice+extension.swift in Sources */,
 				E0D1ECEE2578DA4F00421131 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
