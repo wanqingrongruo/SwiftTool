@@ -18,7 +18,13 @@ extension UIDevice {
         return UIDevice.current.userInterfaceIdiom == .phone
     }
     
+    // From iOS 14, there are apps can run in all platform
+    // Before iOS 14, isMac is not meaningful
     var isMac: Bool {
-        return UIDevice.current.userInterfaceIdiom == .mac
+        if #available(iOS 14.0, *) {
+            return UIDevice.current.userInterfaceIdiom == .mac
+        } else {
+            return false
+        }
     }
 }
