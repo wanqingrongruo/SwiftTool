@@ -4,9 +4,6 @@
 //  Description 防抖器
 //  当事件触发超过一段时间之后再执行, 如果这段时间内又有触发事件, 重新计时
 
-//  Copyright © 2020 Huami inc. All rights reserved.
-//  @author zhengwenxiang(zhengwenxiang@huami.com)  
-
 import Foundation
 
 class Debouncer {

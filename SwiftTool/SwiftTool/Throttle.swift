@@ -3,9 +3,7 @@
 //  Created on 2020/12/23
 //  Description 节流器
 //  预先设定一个执行周期，事件堆积, 等待到期执行. 进入下一个周期
-
-//  Copyright © 2020 Huami inc. All rights reserved.
-//  @author zhengwenxiang(zhengwenxiang@huami.com)  
+  
 
 import Foundation
 

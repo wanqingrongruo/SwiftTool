@@ -3,9 +3,6 @@
 //  Created on 2021/1/15
 //  Description <#文件描述#>
 
-//  Copyright © 2021 Huami inc. All rights reserved.
-//  @author zhengwenxiang(zhengwenxiang@huami.com)  
-
 import Foundation
 import UIKit
 
