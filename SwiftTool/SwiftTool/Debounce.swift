@@ -33,3 +33,16 @@ class Debouncer {
         }
     }
 }
+
+struct DispatchSemaphoreWrapper {
+    private let semaphore: DispatchSemaphore
+    public init(value: Int) {
+        self.semaphore = DispatchSemaphore(value: value)
+        
+    }
+    public func sync<R>(execute: () throws -> R) rethrows -> R {
+        _ = semaphore.wait(timeout: DispatchTime.distantFuture)
+        defer { semaphore.signal() }
+        return try execute()
+    }
+}

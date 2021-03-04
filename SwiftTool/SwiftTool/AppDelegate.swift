@@ -12,6 +12,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let throttler = Throttler(seconds: 1, mode: .trailing)
+        for i in 0...9 {
+            throttler.throttle {
+                print("++++++\(i)")
+            }
+        }
+        
+        let debouncer = Debouncer(label: "debouncer", interval: 1)
+        var sum  = 0
+        for i in 0...9 {
+            sum += i
+            debouncer.call {
+                print("----\(sum)")
+            }
+        }
+        
         return true
     }
 
