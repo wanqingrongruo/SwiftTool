@@ -6,7 +6,7 @@
 import Foundation
 
 extension Data {
-    
+
     // 转data为 16 进制的字符串
     func hexEncodedString() -> String {
         return map { String(format: "%02hhx", $0) }.joined()

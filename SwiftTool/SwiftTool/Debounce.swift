@@ -12,16 +12,16 @@ class Debouncer {
     private let queue: DispatchQueue
     private let semaphore: DispatchSemaphoreWrapper
     private var workItem: DispatchWorkItem?
-    
+
     public init(label: String, interval: Float, qos: DispatchQoS = .userInteractive) {
         self.interval = .milliseconds(Int(interval * 1000))
         self.label = label
         self.queue = DispatchQueue(label: "com.roni.debouncer.\(label)", qos: qos)
         self.semaphore = DispatchSemaphoreWrapper(value: 1)
     }
-    
-    public func call(_ callback: @escaping (() -> ())) {
-        self.semaphore.sync  { () -> () in
+
+    public func call(_ callback: @escaping (() -> Void)) {
+        self.semaphore.sync { () -> Void in
             self.workItem?.cancel()
             self.workItem = DispatchWorkItem {
                 callback()
@@ -38,7 +38,7 @@ struct DispatchSemaphoreWrapper {
     private let semaphore: DispatchSemaphore
     public init(value: Int) {
         self.semaphore = DispatchSemaphore(value: value)
-        
+
     }
     public func sync<R>(execute: () throws -> R) rethrows -> R {
         _ = semaphore.wait(timeout: DispatchTime.distantFuture)

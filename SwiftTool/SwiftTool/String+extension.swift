@@ -5,7 +5,6 @@
 
 import Foundation
 
-
 extension String {
     // 十六进制字符串转 data => 0x68656c6c6f2c20776f726c64 = hello, world
     func hexStringConverToData() -> Data {
@@ -22,9 +21,7 @@ extension String {
             var char = UInt8(ch)
             data.append(&char, count: 1)
         }
-        
+
         return data
     }
 }
-
-

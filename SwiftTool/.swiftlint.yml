@@ -1,0 +1,54 @@
+disabled_rules:
+  - multiple_closures_with_trailing_closure
+  - force_cast
+  - shorthand_operator
+  - force_try
+  - nesting
+excluded: 
+  - Pods
+  - Dependence
+  - mars
+  - Backup
+function_parameter_count:
+  warning: 10
+  error:   20
+file_length:
+  warning: 500
+  error: 1200
+line_length: 200
+large_tuple: 
+  - 10
+function_body_length: 
+  300
+cyclomatic_complexity: 
+  - 100
+type_body_length:
+  - 3000 # warning
+  - 4000 # error
+identifier_name:
+  min_length: 2
+  max_length: 
+    warning: 90
+    error: 1000
+  validates_start_with_lowercase: false
+  excluded:
+    - i
+    - idx
+    - h
+    - w
+    - x
+    - y
+    - id
+    - url
+    - min
+    - max
+    - r
+    - g
+    - b
+    - a
+file_length: 
+  - 1500
+type_name:
+  max_length: # warning and error
+    warning: 70
+    error: 70

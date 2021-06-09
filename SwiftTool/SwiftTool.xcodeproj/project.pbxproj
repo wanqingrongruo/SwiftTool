@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E00E09432670B4DC00C43AF1 /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E09422670B4DC00C43AF1 /* WaterfallLayout.swift */; };
 		E037982B25B19910008A4224 /* UIDevice+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E037982A25B19910008A4224 /* UIDevice+extension.swift */; };
 		E088F8FC2592DAFD008969DE /* Date+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E088F8FB2592DAFD008969DE /* Date+extension.swift */; };
 		E088F8FF2592DB9D008969DE /* Throttle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E088F8FE2592DB9D008969DE /* Throttle.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E00E09422670B4DC00C43AF1 /* WaterfallLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
 		E037982A25B19910008A4224 /* UIDevice+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+extension.swift"; sourceTree = "<group>"; };
 		E088F8FB2592DAFD008969DE /* Date+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+extension.swift"; sourceTree = "<group>"; };
 		E088F8FE2592DB9D008969DE /* Throttle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Throttle.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				E037982A25B19910008A4224 /* UIDevice+extension.swift */,
 				E088F8FE2592DB9D008969DE /* Throttle.swift */,
 				E088F9012592DBDA008969DE /* Debounce.swift */,
+				E00E09422670B4DC00C43AF1 /* WaterfallLayout.swift */,
 				E0D1ECEF2578DA5300421131 /* Assets.xcassets */,
 				E0D1ECF42578DA5300421131 /* LaunchScreen.storyboard */,
 				E0D1ECF72578DA5300421131 /* Info.plist */,
@@ -103,6 +106,7 @@
 				E0D1ECE22578DA4F00421131 /* Sources */,
 				E0D1ECE32578DA4F00421131 /* Frameworks */,
 				E0D1ECE42578DA4F00421131 /* Resources */,
+				E00E09442670B64E00C43AF1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -120,7 +124,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = roni;
 				TargetAttributes = {
 					E0D1ECE52578DA4F00421131 = {
@@ -159,6 +163,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E00E09442670B64E00C43AF1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E0D1ECE22578DA4F00421131 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -172,6 +196,7 @@
 				E0D1ECEC2578DA4F00421131 /* SceneDelegate.swift in Sources */,
 				E088F9022592DBDA008969DE /* Debounce.swift in Sources */,
 				E037982B25B19910008A4224 /* UIDevice+extension.swift in Sources */,
+				E00E09432670B4DC00C43AF1 /* WaterfallLayout.swift in Sources */,
 				E0D1ECEE2578DA4F00421131 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +241,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -276,6 +302,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -310,7 +337,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftTool/Preview Content\"";
-				DEVELOPMENT_TEAM = 65H2VB24S3;
+				DEVELOPMENT_TEAM = 5NU9S58W2U;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,7 +357,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftTool/Preview Content\"";
-				DEVELOPMENT_TEAM = 65H2VB24S3;
+				DEVELOPMENT_TEAM = 5NU9S58W2U;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
